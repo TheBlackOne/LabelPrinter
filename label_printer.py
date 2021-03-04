@@ -62,8 +62,8 @@ def print_label(text):
     # print(text)
 
     response = requests.post(url, final_request_payload)
-    # print(response.status_code)
-    # print(response.text)
+    print(response.status_code)
+    print(response.text)
 
 
 if __name__ == "__main__":
@@ -75,7 +75,7 @@ if __name__ == "__main__":
 
     data_str = ""
 
-    print_label('\r\rTN  : --------  A : 20\rX D :    -0.814 mm Abs \rZ   :    58.739 mm Abs \r')
+    #print_label('\r\rTN  : --------  A : 20\rX D :    -0.814 mm Abs \rZ   :    58.739 mm Abs \r')
 
     while (True):
         if (ser.inWaiting() > 0):
