@@ -1,4 +1,4 @@
-url: http:///raspberrypi.local:8013/api/print/text
+url: http://raspberrypi.local:8013/api/print/text
 
 com_port_name: COM5
 baud: 1200
