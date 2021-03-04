@@ -75,6 +75,8 @@ if __name__ == "__main__":
 
     data_str = ""
 
+    print_label('\r\rTN  : --------  A : 20\rX D :    -0.814 mm Abs \rZ   :    58.739 mm Abs \r')
+
     while (True):
         if (ser.inWaiting() > 0):
             data_str += ser.read(ser.inWaiting()).decode('ascii')
