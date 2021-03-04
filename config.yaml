@@ -1,0 +1,26 @@
+url: http:///raspberrypi.local:8013/api/print/text
+
+com_port_name: COM5
+baud: 1200
+
+page_end_ascii: 0x04
+
+fest: 37.50
+axial: 65.30
+radial: 64.38
+radial_threshold: 118.00
+
+regex_string: '([A-Z] *[A-Z]*) +: +(\S*)\s'
+skip_first_line: true
+
+request_payload:
+  align: left
+  font_family: Noto Mono (Regular)
+  font_size: 51
+  label_size: 17x54
+  margin_bottom: 1
+  margin_left: 1
+  margin_right: 1
+  margin_top: 1
+
+additional_text_20: "\nFest Z: {} mm\nAxial Z: {} mm\nRadial X: {} mm"
